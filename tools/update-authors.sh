@@ -16,7 +16,7 @@ while (<>) {
   next if /(emanuele.stoppa\@baml.com)/;
   next if /(wayou )/;
   next if /(dependabot\[bot\])/;
-  $seen{$_} = push @authors, "- ", $_;
+  $seen{$_} = push @authors, "- ", 1000$_;
 }
 END {
   print "# Authors\n\n";
